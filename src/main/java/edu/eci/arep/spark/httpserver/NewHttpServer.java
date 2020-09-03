@@ -122,6 +122,9 @@ public class NewHttpServer {
         if (path.equals("/")) {
             path = "/index.html";
         }
+        if(path.contains("/Apps")){
+            path = path.replace("/Apps", "");
+        }
         Path file = Paths.get("src/main/resources" + path);
     File arch = new File(System.getProperty("user.dir")+"/"+file);
         if (arch.exists()) {
