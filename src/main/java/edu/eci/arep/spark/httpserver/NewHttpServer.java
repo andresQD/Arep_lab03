@@ -5,9 +5,11 @@
  */
 package edu.eci.arep.spark.httpserver;
 
+import edu.eci.arep.spark.persistencia.ConexionMongo;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,8 +36,13 @@ public class NewHttpServer {
    
     
     private boolean running = false;
+    ConexionMongo cm;
 
     public NewHttpServer() {
+    }
+    
+    public NewHttpServer(ConexionMongo cm) {
+        this.cm = cm;
     }
 
     
@@ -126,13 +133,14 @@ public class NewHttpServer {
             path = path.replace("/Apps", "");
         }
         Path file = Paths.get("src/main/resources" + path);
-    File arch = new File(System.getProperty("user.dir")+"/"+file);
+        File arch = new File(System.getProperty("user.dir")+"/"+file);
+        
         if (arch.exists()) {
             String tipo = Files.probeContentType(file);
             if (tipo.startsWith("text/")) {
                 getFile(out, file, tipo.substring(5));
             } else if (tipo.startsWith("image/")) {
-                getImage(out, path, tipo.substring(6));
+                getImage(out, path, tipo.substring(6) );
             }
         }else{
             file = Paths.get("src/main/resources/noEncuentra.html");
@@ -200,7 +208,7 @@ public class NewHttpServer {
         }
     }
     
-    
+  
     static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));

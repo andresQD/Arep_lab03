@@ -5,13 +5,17 @@
  */
 package edu.eci.arep.spark.httpserver;
 
+import edu.eci.arep.spark.persistencia.ConexionMongo;
+
 /**
  *
  * @author Andrés Quintero
  */
-public class HTTPServer{
+public class HTTPServer {
+
     public static void main(String[] args) {
-           NewHttpServer server = new NewHttpServer();
-           server.start();
-       }
+        ConexionMongo cm = new ConexionMongo();
+        NewHttpServer server = new NewHttpServer(cm);
+        server.start();
+    }
 }
