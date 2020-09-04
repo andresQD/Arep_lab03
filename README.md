@@ -19,3 +19,8 @@ Debe tener instalado:
 * JDK 
 * Maven 
 ## Uso 
+![img1](https://user-images.githubusercontent.com/48091585/92194536-8ecf1b80-ee30-11ea-969d-cf21984480dd.png)
+
+![img2](https://user-images.githubusercontent.com/48091585/92194544-9262a280-ee30-11ea-8b92-b0d6e05f885b.png)
+
+![img3](https://user-images.githubusercontent.com/48091585/92194551-94c4fc80-ee30-11ea-8078-96e9117dc830.png)
