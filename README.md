@@ -24,3 +24,14 @@ Debe tener instalado:
 ![img2](https://user-images.githubusercontent.com/48091585/92194544-9262a280-ee30-11ea-8b92-b0d6e05f885b.png)
 
 ![img3](https://user-images.githubusercontent.com/48091585/92194551-94c4fc80-ee30-11ea-8078-96e9117dc830.png)
+
+![img4](https://user-images.githubusercontent.com/48091585/92205400-39ecce80-ee4b-11ea-8cae-72c15c2bd203.png)
+
+![img5](https://user-images.githubusercontent.com/48091585/92205406-3ce7bf00-ee4b-11ea-8444-781606f8793f.png)
+
+![img6](https://user-images.githubusercontent.com/48091585/92205410-3f4a1900-ee4b-11ea-9109-6a945012e85e.png)
+
+![img7](https://user-images.githubusercontent.com/48091585/92205416-42450980-ee4b-11ea-94cc-707efee2f009.png)
+
+![img8](https://user-images.githubusercontent.com/48091585/92205420-44a76380-ee4b-11ea-83db-f58eae0a9e72.png)
+
